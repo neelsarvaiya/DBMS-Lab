@@ -81,6 +81,48 @@ DELETE FROM bank_deposit WHERE BRANCH_NAME = 'BEDI' OR BRANCH_NAME = 'MADHAPAR';
 DELETE FROM bank_deposit WHERE balance = 8000;
 
 
+--26. Delete all the accounts whose account branch is NULL.
+
+DELETE FROM bank_deposit WHERE branch_name is null
+
+
+--27. Delete all the accounts details where amount is 7000 and name is CHARMI and branch is SHITAL PARK.\
+
+DELETE FROM bank_deposit WHERE amount = 7000 and cname = 'charmi'  and branch_name = 'shital park'
+
+--28. Delete all the remaining records using DELETE command. 
+
+delete from bank_deposit
+
+--29. Delete all the records of DEPOSIT table. (Use TRUNCATE)
+
+TRUNCATE TABLE bank_deposit
+
+--30. Remove DEPOSIT table. (Use DROP)
+
+DROP TABLE bank_deposit
+
+-- Student table
+
+--31. Delete all the students whose stdid is greater than 105.
+
+DELETE FROM STUDENT WHERE stdid>105
+
+--32. Delete the records whose branch is NULL and sname is not NULL.
+
+DELETE FROM STUDENT WHERE branch IS NULL AND sname IS NOT NULL
+
+--33. Delete the records whose SPI is less than 9 and city is RAJKOT.
+
+DELETE FROM STUDENT WHERE spi<9 AND city='RAJKOT'
+
+--34. Delete the records whose branch name is not empty.
+
+DELETE FROM STUDENT WHERE branch IS NOT NULL
+
+--35. Delete all the records of STUDENT table. (Use TRUNCATE)
+
+TRUNCATE TABLE STUDENT
 
 
 
